@@ -13,8 +13,6 @@ html{scroll-behavior:smooth;}
 body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;}
 ::-webkit-scrollbar{width:3px;}
 ::-webkit-scrollbar-thumb{background:var(--accent);}
-
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;transition:all 0.4s;}
 nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--border);backdrop-filter:blur(16px);}
 .logo{display:flex;align-items:center;gap:0.6rem;text-decoration:none;}
@@ -30,8 +28,6 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .btn-edit-site:hover{border-color:var(--accent);color:var(--accent);}
 .btn-wa-nav{background:#25D366;color:#000;border:none;padding:0.55rem 1.1rem;border-radius:4px;font-family:'Outfit',sans-serif;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block;transition:opacity 0.2s;}
 .btn-wa-nav:hover{opacity:0.85;}
-
-/* ADMIN BAR */
 .admin-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:500;background:#1a1a1a;border-top:2px solid var(--accent);padding:0.8rem 2rem;flex-wrap:wrap;align-items:center;gap:0.8rem;}
 .admin-bar.visible{display:flex;}
 .admin-bar-title{font-family:'Space Mono',monospace;font-size:0.75rem;color:var(--accent);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-right:0.5rem;}
@@ -40,8 +36,6 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .admin-action-btn.danger{border-color:#c44;color:#c44;}
 .admin-action-btn.danger:hover{background:#3a1010;}
 .admin-action-btn.success{border-color:#2ecc71;color:#2ecc71;}
-
-/* HERO */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 5rem;position:relative;overflow:hidden;}
 .hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(255,69,0,0.07) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
 .hero-tag{display:inline-flex;align-items:center;gap:0.5rem;border:1px solid rgba(255,69,0,0.35);color:var(--accent);padding:0.4rem 1rem;border-radius:100px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:2rem;background:var(--accent-soft);animation:fadeUp 0.7s ease both;position:relative;z-index:1;}
@@ -54,20 +48,14 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,69,0,0.3);}
 .btn-ghost{border:1.5px solid var(--border);color:var(--text);padding:0.9rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;font-size:0.9rem;transition:all 0.2s;display:inline-block;}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
-
-/* COUNTERS */
 .counters-wrap{background:var(--accent);padding:2.5rem 3rem;display:flex;justify-content:center;flex-wrap:wrap;gap:0;}
 .counter-item{flex:1;min-width:150px;text-align:center;padding:1rem 2rem;border-right:1px solid rgba(0,0,0,0.15);}
 .counter-item:last-child{border-right:none;}
 .counter-num{font-family:'Space Mono',monospace;font-size:2.5rem;font-weight:700;color:#000;line-height:1;}
 .counter-label{font-size:0.78rem;color:rgba(0,0,0,0.65);font-weight:600;margin-top:0.4rem;letter-spacing:0.05em;}
-
-/* TICKER */
 .ticker-wrap{overflow:hidden;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:0.9rem 0;}
 .ticker{display:flex;gap:3rem;white-space:nowrap;animation:ticker 25s linear infinite;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);}
 .ticker-dot{color:var(--accent);}
-
-/* PRODUCTS */
 .section{padding:5rem 3rem;max-width:1400px;margin:0 auto;}
 .sec-label{font-size:0.65rem;color:var(--accent);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.5rem;}
 .sec-title{font-family:'Outfit',sans-serif;font-size:clamp(1.8rem,3.5vw,3rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:3rem;}
@@ -111,8 +99,6 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .review-item-stars{color:#f5c518;font-size:0.75rem;}
 .review-item-name{font-size:0.72rem;font-weight:700;color:var(--text);margin-left:0.4rem;}
 .review-item-text{font-size:0.78rem;color:var(--muted);line-height:1.5;margin-top:0.2rem;}
-
-/* ABOUT */
 .about-wrap{background:var(--surface);border-top:1px solid var(--border);padding:5rem 3rem;}
 .about-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
 .about-text{color:var(--muted);font-size:1rem;line-height:1.8;}
@@ -121,8 +107,6 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .feat-icon{font-size:1.5rem;display:block;margin-bottom:0.8rem;}
 .feat-title{font-weight:700;font-size:0.9rem;margin-bottom:0.4rem;}
 .feat-desc{font-size:0.78rem;color:var(--muted);line-height:1.5;}
-
-/* WHAT IS 3D PRINTING */
 .printing-section{background:var(--bg);padding:5rem 3rem;}
 .printing-steps{max-width:1200px;margin:0 auto;}
 .steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--border);margin-bottom:2rem;}
@@ -131,8 +115,6 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .step-title{font-weight:700;font-size:0.95rem;margin-bottom:0.4rem;}
 .step-desc{font-size:0.8rem;color:var(--muted);line-height:1.6;}
 .fun-fact{background:var(--accent-soft);border:1px solid rgba(255,69,0,0.2);border-radius:10px;padding:1.4rem 1.8rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
-
-/* FILAMENTS */
 .filament-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:5rem 3rem;}
 .filament-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:2rem;}
 .filament-card{background:var(--card);border-radius:12px;overflow:hidden;border:1px solid var(--border);}
@@ -151,8 +133,6 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .fil-table td{padding:0.8rem 1.5rem;text-align:center;border-top:1px solid var(--border);}
 .fil-table td:first-child{text-align:left;color:var(--muted);}
 .fil-table tr:nth-child(even){background:var(--surface);}
-
-/* CALCULATOR */
 .calc-section{padding:5rem 3rem;background:var(--surface);border-top:1px solid var(--border);}
 .calc-box{max-width:700px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
 .calc-header{background:var(--accent);padding:1.5rem 2rem;}
@@ -176,8 +156,6 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .coupon-msg{font-size:0.82rem;margin-top:0.6rem;font-weight:600;}
 .coupon-msg.success{color:#2ecc71;}
 .coupon-msg.error{color:#e74c3c;}
-
-/* FAQ */
 .faq-section{padding:5rem 3rem;background:var(--bg);border-top:1px solid var(--border);}
 .faq-inner{max-width:800px;margin:0 auto;}
 .faq-item{border-bottom:1px solid var(--border);overflow:hidden;}
@@ -187,8 +165,6 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .faq-item.open .faq-icon{transform:rotate(45deg);}
 .faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.3s;font-size:0.88rem;color:var(--muted);line-height:1.8;padding:0;}
 .faq-item.open .faq-a{max-height:300px;padding-bottom:1.2rem;}
-
-/* BULK ORDER */
 .bulk-section{background:linear-gradient(135deg,#1a0a00,#0f0500);border-top:1px solid var(--border);padding:5rem 3rem;}
 .bulk-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
 .bulk-perks{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem;}
@@ -202,25 +178,16 @@ nav.scrolled{background:rgba(250,246,241,0.95);border-bottom:1px solid var(--bor
 .bulk-input:focus{border-color:var(--accent);}
 .btn-bulk{width:100%;background:var(--accent);color:#000;border:none;padding:1rem;border-radius:8px;font-family:'Outfit',sans-serif;font-weight:800;font-size:0.95rem;cursor:pointer;transition:opacity 0.2s;margin-top:0.4rem;}
 .btn-bulk:hover{opacity:0.88;}
-
-/* CONTACT */
 .contact-section{padding:5rem 3rem;border-top:1px solid var(--border);max-width:1200px;margin:0 auto;}
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1px;background:var(--border);}
 .contact-card{background:var(--card);padding:2rem 1.5rem;text-align:center;}
 .contact-icon{font-size:1.8rem;display:block;margin-bottom:1rem;}
 .contact-label{font-size:0.65rem;color:var(--muted);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem;}
 .contact-val{font-size:0.88rem;font-weight:600;color:var(--text);word-break:break-all;}
-
-/* FOOTER */
 footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
 .footer-copy{font-size:0.72rem;color:var(--muted);}
-.footer-made{font-size:0.72rem;color:var(--muted);}
-
-/* WA FAB */
 .wa-fab{position:fixed;bottom:5rem;right:2rem;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.4);z-index:400;transition:transform 0.2s;}
 .wa-fab:hover{transform:scale(1.1);}
-
-/* MODALS */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1000;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
 .modal-overlay.open{display:flex;}
 .modal{background:#fff;border:1px solid var(--border);border-radius:12px;padding:2.5rem;width:92%;max-width:500px;animation:fadeUp 0.3s ease;max-height:90vh;overflow-y:auto;}
@@ -239,8 +206,6 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;align-i
 .upload-row{display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;}
 .upload-btn{background:var(--surface);border:1px solid var(--border);color:var(--muted);padding:0.6rem 1rem;border-radius:6px;font-size:0.78rem;cursor:pointer;font-family:'Outfit',sans-serif;}
 .upload-btn:hover{border-color:var(--accent);color:var(--accent);}
-
-/* CUSTOMIZE MODAL */
 .cm-section{margin-bottom:1.4rem;}
 .cm-label{font-size:0.78rem;font-weight:700;color:var(--text);margin-bottom:0.7rem;letter-spacing:0.02em;}
 .color-swatches{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.5rem;}
@@ -260,21 +225,18 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;align-i
 .summary-row .s-val{font-weight:600;color:var(--text);}
 .btn-wa-order{background:#25D366;color:#000;border:none;padding:0.85rem 1.5rem;border-radius:6px;font-family:'Outfit',sans-serif;font-weight:700;font-size:0.9rem;cursor:pointer;text-decoration:none;text-align:center;display:inline-block;transition:opacity 0.2s,transform 0.2s;}
 .btn-wa-order:hover{opacity:0.9;transform:translateY(-1px);}
-
-/* REVIEW MODAL */
 .review-stars-input{display:flex;gap:0.5rem;margin-bottom:1rem;}
 .review-star-inp{font-size:2rem;cursor:pointer;color:#ddd;transition:color 0.15s;}
 .review-star-inp.filled{color:#f5c518;}
-
-/* COUPON MANAGER */
 .coupon-manager-row{display:flex;align-items:center;justify-content:space-between;padding:0.7rem 1rem;background:var(--surface);border-radius:6px;margin-bottom:0.5rem;border:1px solid var(--border);}
-
-/* ANIMATIONS */
+/* Firebase loading indicator */
+.fb-loading{text-align:center;padding:3rem;color:var(--muted);font-size:0.9rem;grid-column:1/-1;}
+.fb-loading-spinner{display:inline-block;width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;margin-bottom:1rem;}
+@keyframes spin{to{transform:rotate(360deg);}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease;}
 .reveal.visible{opacity:1;transform:none;}
-
 @media(max-width:768px){
   nav{padding:1rem 1.2rem;}
   .nav-links{display:none;}
@@ -366,7 +328,9 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;align-i
     <button class="tab-btn" onclick="filterProducts('Keychains',this)">🔑 Keychains</button>
     <button class="tab-btn" onclick="filterProducts('Decor',this)">🌊 Decor</button>
   </div>
-  <div class="products-grid" id="productsGrid"></div>
+  <div class="products-grid" id="productsGrid">
+    <div class="fb-loading"><div class="fb-loading-spinner"></div><br>Loading products...</div>
+  </div>
 </div>
 
 <!-- ABOUT -->
@@ -582,9 +546,9 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;align-i
     <svg width="20" height="20" viewBox="0 0 100 100" fill="none"><polygon points="50,8 92,32 92,68 50,92 8,68 8,32" fill="none" stroke="#9a8f85" stroke-width="7" stroke-linejoin="round"/><polygon points="50,8 92,32 50,56 8,32" fill="none" stroke="#9a8f85" stroke-width="7" stroke-linejoin="round"/><line x1="50" y1="56" x2="50" y2="92" stroke="#9a8f85" stroke-width="7"/></svg>
     <span class="footer-copy">© 2025 3Dify™ — Registered Trademark. Pune, India.</span>
   </div>
-  <a href="https://instagram.com/3dify_in" target="_blank" style="color:var(--muted);font-size:0.8rem;text-decoration:none;display:flex;align-items:center;gap:0.4rem;" onmouseover="this.style.color='#ff4500'" onmouseout="this.style.color=''">📸 @3dify_in</a>
-  <a href="mailto:3dify.india@gmail.com" style="color:var(--muted);font-size:0.8rem;text-decoration:none;display:flex;align-items:center;gap:0.4rem;" onmouseover="this.style.color='#ff4500'" onmouseout="this.style.color=''">📧 3dify.india@gmail.com</a>
-  <span class="footer-made">Made with ♥ and filament.</span>
+  <a href="https://instagram.com/3dify_in" target="_blank" style="color:var(--muted);font-size:0.8rem;text-decoration:none;" onmouseover="this.style.color='#ff4500'" onmouseout="this.style.color=''">📸 @3dify_in</a>
+  <a href="mailto:3dify.india@gmail.com" style="color:var(--muted);font-size:0.8rem;text-decoration:none;" onmouseover="this.style.color='#ff4500'" onmouseout="this.style.color=''">📧 3dify.india@gmail.com</a>
+  <span style="font-size:0.72rem;color:var(--muted);">Made with ♥ and filament.</span>
 </footer>
 
 <a id="waFab" href="https://wa.me/919518774887" target="_blank" class="wa-fab">💬</a>
@@ -733,7 +697,7 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;align-i
   </div>
 </div>
 
-<!-- COUPON MANAGER MODAL -->
+<!-- COUPON MANAGER -->
 <div class="modal-overlay" id="couponModal">
   <div class="modal" style="max-width:460px;">
     <div class="modal-title">🎟 Manage Coupon Codes</div>
@@ -752,73 +716,128 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;align-i
   </div>
 </div>
 
-<script>
+<!-- ===================== FIREBASE + APP SCRIPT ===================== -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getDatabase, ref, set, push, onValue, remove, update } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBzrHf1KARQJcdex6gu4EEgaw1oi9ajqhQ",
+  authDomain: "dify-7aed7.firebaseapp.com",
+  databaseURL: "https://dify-7aed7-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "dify-7aed7",
+  storageBucket: "dify-7aed7.firebasestorage.app",
+  messagingSenderId: "536041897685",
+  appId: "1:536041897685:web:11e793f951e4951f84ec5c",
+  measurementId: "G-WDNLLWNG0G"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
 // ── DATA ──
 let waNum = "919518774887";
 let editId = null;
-let nextId = 10;
 let activeFilter = 'all';
 let isAdmin = false;
 const ADMIN_PW = "Tanishq@9110";
 let COUPONS = { '3DIFY10': 10, 'FIRST15': 15, 'SAVE20': 20 };
 let appliedDiscount = 0;
-let reviews = { 1:[], 2:[], 3:[], 4:[] };
+let reviews = {};
 let customizeProductId = null;
 let selectedRating = 0;
 let reviewProductId = null;
+let products = [];
 
-let products = [
-  { id:1, name:"Geometric Glow Lamp", cat:"Lighting", badge:"Bestseller", desc:"Hexagonal ambient lamp with warm diffused light. Perfect for bedside or desk.", price:"₹1,299", old:"₹1,799", img:"", emoji:"🔆", bg:"linear-gradient(135deg,#1a0f00,#2a1800)" },
-  { id:2, name:"Custom Name Keychain", cat:"Keychains", badge:"", desc:"Personalized with any name or logo. Durable PLA, 20+ color choices.", price:"₹349", old:"", img:"", emoji:"🔑", bg:"linear-gradient(135deg,#000a1a,#001a2a)" },
-  { id:3, name:"Wave Wall Art Panel", cat:"Decor", badge:"New", desc:"Parametric wave pattern, wall-mounted. Stunning shadow play at any light angle.", price:"₹2,499", old:"", img:"", emoji:"🌊", bg:"linear-gradient(135deg,#0a001a,#150033)" },
-  { id:4, name:"Custom Order — Your Idea", cat:"Custom", badge:"", desc:"Send us your idea or STL file. We print it in your chosen color and material.", price:"From ₹499", old:"", img:"", emoji:"⭐", bg:"linear-gradient(135deg,#0a0a1a,#12123a)" }
+// Default products (shown only if Firebase is empty)
+const DEFAULT_PRODUCTS = [
+  { name:"Geometric Glow Lamp", cat:"Lighting", badge:"Bestseller", desc:"Hexagonal ambient lamp with warm diffused light. Perfect for bedside or desk.", price:"₹1,299", old:"₹1,799", img:"", emoji:"🔆", bg:"linear-gradient(135deg,#1a0f00,#2a1800)" },
+  { name:"Custom Name Keychain", cat:"Keychains", badge:"", desc:"Personalized with any name or logo. Durable PLA, 20+ color choices.", price:"₹349", old:"", img:"", emoji:"🔑", bg:"linear-gradient(135deg,#000a1a,#001a2a)" },
+  { name:"Wave Wall Art Panel", cat:"Decor", badge:"New", desc:"Parametric wave pattern, wall-mounted. Stunning shadow play at any light angle.", price:"₹2,499", old:"", img:"", emoji:"🌊", bg:"linear-gradient(135deg,#0a001a,#150033)" },
+  { name:"Custom Order — Your Idea", cat:"Custom", badge:"", desc:"Send us your idea or STL file. We print it in your chosen color and material.", price:"From ₹499", old:"", img:"", emoji:"⭐", bg:"linear-gradient(135deg,#0a0a1a,#12123a)" }
 ];
+
+// ── FIREBASE: Load products in real-time ──
+const productsRef = ref(db, 'products');
+onValue(productsRef, (snapshot) => {
+  const data = snapshot.val();
+  if (data) {
+    products = Object.entries(data).map(([key, val]) => ({ ...val, firebaseKey: key }));
+  } else {
+    // First time: seed default products
+    products = [];
+    DEFAULT_PRODUCTS.forEach(p => {
+      const newRef = push(productsRef);
+      set(newRef, { ...p, id: newRef.key });
+    });
+    return;
+  }
+  renderProducts();
+});
+
+// ── FIREBASE: Load reviews in real-time ──
+const reviewsRef = ref(db, 'reviews');
+onValue(reviewsRef, (snapshot) => {
+  reviews = snapshot.val() || {};
+  renderProducts();
+});
+
+// ── FIREBASE: Load coupons ──
+const couponsRef = ref(db, 'coupons');
+onValue(couponsRef, (snapshot) => {
+  const data = snapshot.val();
+  if (data) COUPONS = data;
+});
 
 // ── RENDER PRODUCTS ──
 function renderProducts() {
   const grid = document.getElementById('productsGrid');
+  if (!grid) return;
   grid.innerHTML = '';
   let filtered = products;
   if (activeFilter === 'bestseller') filtered = products.filter(p => p.badge && p.badge.toLowerCase().includes('best'));
   else if (activeFilter === 'new') filtered = products.filter(p => p.badge && p.badge.toLowerCase().includes('new'));
   else if (activeFilter !== 'all') filtered = products.filter(p => p.cat === activeFilter);
+
   if (filtered.length === 0) {
     grid.innerHTML = '<div style="padding:3rem;color:var(--muted);text-align:center;grid-column:1/-1;">No products in this category yet.</div>';
   }
+
   filtered.forEach(function(p) {
     var card = document.createElement('div');
     card.className = 'product-card reveal';
     var visualHtml = p.img
-      ? '<img src="' + p.img + '" alt="' + p.name + '" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"/><div class="emoji-placeholder" style="display:none">' + p.emoji + '</div>'
-      : '<div class="emoji-placeholder">' + p.emoji + '</div>';
-    var rs = reviews[p.id] || [];
+      ? '<img src="' + p.img + '" alt="' + p.name + '" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"/><div class="emoji-placeholder" style="display:none">' + (p.emoji||'🖨') + '</div>'
+      : '<div class="emoji-placeholder">' + (p.emoji||'🖨') + '</div>';
+    var rs = reviews[p.firebaseKey] ? Object.values(reviews[p.firebaseKey]) : [];
     var avg = rs.length ? Math.round(rs.reduce(function(s,r){return s+r.rating;},0)/rs.length) : 0;
     var starsHtml = [1,2,3,4,5].map(function(i){return '<span class="star'+(i<=avg?' filled':'')+'">★</span>';}).join('');
     var reviewsHtml = rs.length > 0 ? '<div class="reviews-list">' + rs.slice(-2).reverse().map(function(r){return '<div class="review-item"><span class="review-item-stars">'+'★'.repeat(r.rating)+'☆'.repeat(5-r.rating)+'</span><span class="review-item-name">'+r.name+'</span><p class="review-item-text">'+r.text+'</p></div>';}).join('') + '</div>' : '';
     card.innerHTML =
-      '<div class="product-visual" style="background:'+p.bg+'">'+
+      '<div class="product-visual" style="background:'+(p.bg||'#111')+'">'+
         visualHtml+
         (p.badge ? '<div class="product-badge">'+p.badge+'</div>' : '')+
-        '<button class="product-edit-btn" onclick="openEditProduct('+p.id+')" style="display:'+(isAdmin?'flex':'none')+'">✏</button>'+
+        '<button class="product-edit-btn" onclick="window._openEditProduct(\''+p.firebaseKey+'\')" style="display:'+(isAdmin?'flex':'none')+'">✏</button>'+
       '</div>'+
       '<div class="product-body">'+
         '<div class="delivery-badge">🚚 '+(p.cat==='Custom'?'Ships in 3–5 days':'Ships in 24 hrs')+'</div>'+
         '<div class="product-cat">'+p.cat+'</div>'+
         '<div class="product-name">'+p.name+'</div>'+
         '<div class="product-desc">'+p.desc+'</div>'+
-        '<div class="star-row"><div class="stars">'+starsHtml+'</div><span class="review-count">('+rs.length+' reviews)</span><button class="review-btn" onclick="openReviewModal('+p.id+')">+ Review</button></div>'+
+        '<div class="star-row"><div class="stars">'+starsHtml+'</div><span class="review-count">('+rs.length+' reviews)</span><button class="review-btn" onclick="window._openReview(\''+p.firebaseKey+'\',\''+p.name.replace(/'/g,"\\'")+'\')" >+ Review</button></div>'+
         '<div class="product-foot">'+
           '<div><span class="product-price">'+p.price+'</span>'+(p.old?'<span class="product-price-old">'+p.old+'</span>':'')+
           '</div>'+
           '<div style="display:flex;gap:0.5rem;align-items:center;">'+
-            (isAdmin?'<button class="btn-del-card" onclick="quickDelete('+p.id+')" title="Delete">🗑</button>':'')+
-            '<button class="btn-order" onclick="openCustomizeModal('+p.id+')">🎨 Customize & Order</button>'+
+            (isAdmin?'<button class="btn-del-card" onclick="window._quickDelete(\''+p.firebaseKey+'\')" title="Delete">🗑</button>':'')+
+            '<button class="btn-order" onclick="window._openCustomize(\''+p.firebaseKey+'\')">🎨 Customize & Order</button>'+
           '</div>'+
         '</div>'+
         reviewsHtml+
       '</div>';
     grid.appendChild(card);
   });
+
   if (isAdmin) {
     var add = document.createElement('div');
     add.className = 'add-product-tile';
@@ -829,18 +848,53 @@ function renderProducts() {
   document.querySelectorAll('.reveal').forEach(function(el){ observer.observe(el); });
 }
 
-function filterProducts(filter, btn) {
-  activeFilter = filter;
-  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
-  if (btn) btn.classList.add('active');
-  renderProducts();
-}
+// Expose functions to global scope for onclick handlers
+window._openEditProduct = function(key) {
+  editId = key;
+  var p = products.find(function(x){ return x.firebaseKey===key; });
+  if (!p) return;
+  document.getElementById('pm_title').textContent = '✏ Edit Product';
+  document.getElementById('pm_name').value = p.name||'';
+  document.getElementById('pm_cat').value = p.cat||'';
+  document.getElementById('pm_desc').value = p.desc||'';
+  document.getElementById('pm_price').value = p.price||'';
+  document.getElementById('pm_old').value = p.old||'';
+  document.getElementById('pm_badge').value = p.badge||'';
+  document.getElementById('pm_img').value = p.img||'';
+  document.getElementById('pm_del').style.display = 'inline-block';
+  openModal('productModal');
+};
 
-function quickDelete(id) {
+window._quickDelete = function(key) {
   if (!confirm('Delete this product?')) return;
-  products = products.filter(function(x){ return x.id !== id; });
-  renderProducts();
-}
+  remove(ref(db, 'products/' + key));
+  showToast('🗑 Product deleted');
+};
+
+window._openCustomize = function(key) {
+  customizeProductId = key;
+  var p = products.find(function(x){ return x.firebaseKey===key; });
+  if (!p) return;
+  document.getElementById('cm_name').textContent = p.name;
+  document.getElementById('cm_text').value = '';
+  document.getElementById('cm_note').value = '';
+  document.querySelectorAll('#cm_colors .swatch').forEach(function(s,i){ s.classList.toggle('active',i===0); });
+  document.querySelectorAll('#cm_sizes .pill').forEach(function(s,i){ s.classList.toggle('active',i===0); });
+  document.querySelectorAll('#cm_mats .pill').forEach(function(s,i){ s.classList.toggle('active',i===0); });
+  document.getElementById('cm_color_label').textContent = 'Black';
+  updateOrderSummary(p);
+  openModal('customizeModal');
+};
+
+window._openReview = function(key, name) {
+  reviewProductId = key;
+  selectedRating = 0;
+  document.getElementById('rev_product_name').textContent = name;
+  document.getElementById('rev_name').value = '';
+  document.getElementById('rev_text').value = '';
+  document.querySelectorAll('.review-star-inp').forEach(function(s){ s.classList.remove('filled'); });
+  openModal('reviewModal');
+};
 
 // ── PRODUCT MODAL ──
 function openAddProduct() {
@@ -850,255 +904,240 @@ function openAddProduct() {
   document.getElementById('pm_del').style.display = 'none';
   openModal('productModal');
 }
-function openEditProduct(id) {
-  editId = id;
-  var p = products.find(function(x){ return x.id===id; });
-  document.getElementById('pm_title').textContent = '✏ Edit Product';
-  document.getElementById('pm_name').value = p.name;
-  document.getElementById('pm_cat').value = p.cat;
-  document.getElementById('pm_desc').value = p.desc;
-  document.getElementById('pm_price').value = p.price;
-  document.getElementById('pm_old').value = p.old||'';
-  document.getElementById('pm_badge').value = p.badge||'';
-  document.getElementById('pm_img').value = p.img||'';
-  document.getElementById('pm_del').style.display = 'inline-block';
-  openModal('productModal');
-}
-function saveProduct() {
-  var name=document.getElementById('pm_name').value.trim()||'Unnamed';
-  var cat=document.getElementById('pm_cat').value.trim()||'Product';
-  var desc=document.getElementById('pm_desc').value.trim();
-  var price=document.getElementById('pm_price').value.trim()||'₹0';
-  var old=document.getElementById('pm_old').value.trim();
-  var badge=document.getElementById('pm_badge').value.trim();
-  var img=document.getElementById('pm_img').value.trim();
-  var emojis=['🔆','🔑','🌊','🌿','🎮','⭐','🖨','🎨','💡','🔮'];
+window.openAddProduct = openAddProduct;
+
+window.saveProduct = function() {
+  var name = document.getElementById('pm_name').value.trim()||'Unnamed';
+  var cat = document.getElementById('pm_cat').value.trim()||'Product';
+  var desc = document.getElementById('pm_desc').value.trim();
+  var price = document.getElementById('pm_price').value.trim()||'₹0';
+  var old = document.getElementById('pm_old').value.trim();
+  var badge = document.getElementById('pm_badge').value.trim();
+  var img = document.getElementById('pm_img').value.trim();
+  var emojis = ['🔆','🔑','🌊','🌿','🎮','⭐','🖨','🎨','💡','🔮'];
+  var emoji = emojis[Math.floor(Math.random()*emojis.length)];
+  var bg = 'linear-gradient(135deg,#0a0a0a,#1a1a1a)';
+
   if (editId) {
-    var idx=products.findIndex(function(x){return x.id===editId;});
-    products[idx]=Object.assign({},products[idx],{name:name,cat:cat,desc:desc,price:price,old:old,badge:badge,img:img});
+    update(ref(db, 'products/' + editId), {name,cat,desc,price,old,badge,img});
+    showToast('✅ Product updated!');
   } else {
-    products.push({id:nextId++,name:name,cat:cat,desc:desc,price:price,old:old,badge:badge,img:img,emoji:emojis[products.length%emojis.length],bg:'linear-gradient(135deg,#0a0a0a,#1a1a1a)'});
+    var newRef = push(productsRef);
+    set(newRef, {name,cat,desc,price,old,badge,img,emoji,bg,id:newRef.key});
+    showToast('✅ Product added & saved to Firebase!');
   }
   closeModal('productModal');
-  renderProducts();
-}
-function deleteProduct() {
+};
+
+window.deleteProduct = function() {
   if (!editId) return;
-  products=products.filter(function(x){return x.id!==editId;});
+  remove(ref(db, 'products/' + editId));
   closeModal('productModal');
-  renderProducts();
-}
-function handleProdImg(e) {
-  var file=e.target.files[0]; if(!file) return;
-  var reader=new FileReader();
-  reader.onload=function(ev){ document.getElementById('pm_img').value=ev.target.result; };
+  showToast('🗑 Product deleted');
+};
+
+window.handleProdImg = function(e) {
+  var file = e.target.files[0]; if (!file) return;
+  var reader = new FileReader();
+  reader.onload = function(ev){ document.getElementById('pm_img').value = ev.target.result; };
   reader.readAsDataURL(file);
-}
+};
+
+// ── FILTER ──
+window.filterProducts = function(filter, btn) {
+  activeFilter = filter;
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+  renderProducts();
+};
 
 // ── SITE MODAL ──
-function openSiteModal() {
-  document.getElementById('si_tagline').value=document.getElementById('heroSub').textContent;
-  document.getElementById('si_about').value=document.getElementById('aboutText').textContent;
-  document.getElementById('si_wa').value=waNum;
-  document.getElementById('si_email').value='3dify.india@gmail.com';
-  document.getElementById('si_loc').value=document.getElementById('ctLocation').textContent;
-  document.getElementById('si_hours').value=document.getElementById('ctHours').textContent;
+window.openSiteModal = function() {
+  document.getElementById('si_tagline').value = document.getElementById('heroSub').textContent;
+  document.getElementById('si_about').value = document.getElementById('aboutText').textContent;
+  document.getElementById('si_wa').value = waNum;
+  document.getElementById('si_email').value = '3dify.india@gmail.com';
+  document.getElementById('si_loc').value = document.getElementById('ctLocation').textContent;
+  document.getElementById('si_hours').value = document.getElementById('ctHours').textContent;
   openModal('siteModal');
-}
-function saveSite() {
-  document.getElementById('heroSub').textContent=document.getElementById('si_tagline').value;
-  document.getElementById('aboutText').textContent=document.getElementById('si_about').value;
-  waNum=document.getElementById('si_wa').value.replace(/\D/g,'');
-  document.getElementById('ctWA').textContent='+'+waNum;
-  document.getElementById('ctLocation').textContent=document.getElementById('si_loc').value;
-  document.getElementById('ctHours').textContent=document.getElementById('si_hours').value;
-  var waUrl='https://wa.me/'+waNum;
-  document.getElementById('waNavBtn').href=waUrl;
-  document.getElementById('waHeroBtn').href=waUrl;
-  document.getElementById('waFab').href=waUrl;
+};
+
+window.saveSite = function() {
+  document.getElementById('heroSub').textContent = document.getElementById('si_tagline').value;
+  document.getElementById('aboutText').textContent = document.getElementById('si_about').value;
+  waNum = document.getElementById('si_wa').value.replace(/\D/g,'');
+  document.getElementById('ctWA').textContent = '+'+waNum;
+  document.getElementById('ctLocation').textContent = document.getElementById('si_loc').value;
+  document.getElementById('ctHours').textContent = document.getElementById('si_hours').value;
+  var waUrl = 'https://wa.me/'+waNum;
+  document.getElementById('waNavBtn').href = waUrl;
+  document.getElementById('waHeroBtn').href = waUrl;
+  document.getElementById('waFab').href = waUrl;
   closeModal('siteModal');
-  renderProducts();
-}
+  showToast('✅ Site info updated!');
+};
 
 // ── ADMIN ──
-function openLoginModal() {
-  document.getElementById('login_pw').value='';
-  document.getElementById('login_err').style.display='none';
+window.openLoginModal = function() {
+  document.getElementById('login_pw').value = '';
+  document.getElementById('login_err').style.display = 'none';
   openModal('loginModal');
-  setTimeout(function(){ document.getElementById('login_pw').focus(); },300);
-}
-function doLogin() {
-  if (document.getElementById('login_pw').value===ADMIN_PW) {
-    isAdmin=true;
+  setTimeout(function(){ document.getElementById('login_pw').focus(); }, 300);
+};
+
+window.doLogin = function() {
+  if (document.getElementById('login_pw').value === ADMIN_PW) {
+    isAdmin = true;
     closeModal('loginModal');
-    document.getElementById('adminLoginBtn').style.display='none';
-    document.getElementById('adminEditBtn').style.display='inline-block';
-    document.getElementById('adminLogoutBtn').style.display='inline-block';
+    document.getElementById('adminLoginBtn').style.display = 'none';
+    document.getElementById('adminEditBtn').style.display = 'inline-block';
+    document.getElementById('adminLogoutBtn').style.display = 'inline-block';
     document.getElementById('adminBar').classList.add('visible');
-    document.body.style.paddingBottom='60px';
+    document.body.style.paddingBottom = '60px';
     renderProducts();
     showToast('✅ Logged in as Admin 🔐');
-    // Notify via email
-    var now = new Date().toLocaleString('en-IN');
-    var mailMsg = 'Someone just logged into the 3Dify admin panel.%0A%0ATime: '+encodeURIComponent(now)+'%0AWebsite: 3Dify%0A%0AIf this was not you, change your password immediately.';
-    window.open('mailto:tanishqchhajed@gmail.com?subject=3Dify Admin Login Alert&body='+mailMsg);
   } else {
-    document.getElementById('login_err').style.display='block';
-    document.getElementById('login_pw').value='';
+    document.getElementById('login_err').style.display = 'block';
+    document.getElementById('login_pw').value = '';
     document.getElementById('login_pw').focus();
   }
-}
-function adminLogout() {
-  isAdmin=false;
-  document.getElementById('adminLoginBtn').style.display='inline-block';
-  document.getElementById('adminEditBtn').style.display='none';
-  document.getElementById('adminLogoutBtn').style.display='none';
+};
+
+window.adminLogout = function() {
+  isAdmin = false;
+  document.getElementById('adminLoginBtn').style.display = 'inline-block';
+  document.getElementById('adminEditBtn').style.display = 'none';
+  document.getElementById('adminLogoutBtn').style.display = 'none';
   document.getElementById('adminBar').classList.remove('visible');
-  document.body.style.paddingBottom='';
+  document.body.style.paddingBottom = '';
   renderProducts();
   showToast('👋 Logged out');
-}
+};
 
 // ── COUPON MANAGER ──
-function openCouponManager() { renderCouponList(); openModal('couponModal'); }
+window.openCouponManager = function() { renderCouponList(); openModal('couponModal'); };
+
 function renderCouponList() {
-  var list=document.getElementById('coupon_list');
-  var entries=Object.entries(COUPONS);
-  if (!entries.length) { list.innerHTML='<p style="font-size:0.82rem;color:var(--muted);">No coupons yet.</p>'; return; }
-  list.innerHTML=entries.map(function(e){
-    return '<div class="coupon-manager-row"><div><span style="font-family:Space Mono,monospace;font-weight:700;color:var(--accent);">'+e[0]+'</span><span style="font-size:0.78rem;color:var(--muted);margin-left:0.8rem;">'+e[1]+'% off</span></div><button onclick="deleteCoupon(\''+e[0]+'\')" style="background:none;border:1px solid #c44;color:#c44;padding:0.3rem 0.8rem;border-radius:4px;font-size:0.75rem;cursor:pointer;">🗑 Remove</button></div>';
+  var list = document.getElementById('coupon_list');
+  var entries = Object.entries(COUPONS);
+  if (!entries.length) { list.innerHTML = '<p style="font-size:0.82rem;color:var(--muted);">No coupons yet.</p>'; return; }
+  list.innerHTML = entries.map(function(e){
+    return '<div class="coupon-manager-row"><div><span style="font-family:Space Mono,monospace;font-weight:700;color:var(--accent);">'+e[0]+'</span><span style="font-size:0.78rem;color:var(--muted);margin-left:0.8rem;">'+e[1]+'% off</span></div><button onclick="window._deleteCoupon(\''+e[0]+'\')" style="background:none;border:1px solid #c44;color:#c44;padding:0.3rem 0.8rem;border-radius:4px;font-size:0.75rem;cursor:pointer;">🗑 Remove</button></div>';
   }).join('');
 }
-function addCoupon() {
-  var code=document.getElementById('new_coupon_code').value.trim().toUpperCase();
-  var pct=parseInt(document.getElementById('new_coupon_pct').value);
+
+window.addCoupon = function() {
+  var code = document.getElementById('new_coupon_code').value.trim().toUpperCase();
+  var pct = parseInt(document.getElementById('new_coupon_pct').value);
   if (!code||!pct||pct<1||pct>90) { showToast('❌ Enter a valid code and %'); return; }
-  COUPONS[code]=pct;
-  document.getElementById('new_coupon_code').value='';
-  document.getElementById('new_coupon_pct').value='';
+  COUPONS[code] = pct;
+  set(ref(db, 'coupons'), COUPONS);
+  document.getElementById('new_coupon_code').value = '';
+  document.getElementById('new_coupon_pct').value = '';
   renderCouponList();
   showToast('✅ Coupon '+code+' added!');
-}
-function deleteCoupon(code) {
+};
+
+window._deleteCoupon = function(code) {
   delete COUPONS[code];
+  set(ref(db, 'coupons'), COUPONS);
   renderCouponList();
   showToast('🗑 Coupon '+code+' removed');
-}
+};
 
 // ── CALCULATOR ──
-function calcPrice() {
-  var base=parseFloat(document.getElementById('calc_product').value)||500;
-  var size=parseFloat(document.getElementById('calc_size').value)||1;
-  var mat=parseFloat(document.getElementById('calc_mat').value)||1;
-  var qty=Math.max(1,parseInt(document.getElementById('calc_qty').value)||1);
-  var total=Math.round(base*size*mat)*qty;
-  if (appliedDiscount>0) total=Math.round(total*(1-appliedDiscount/100));
-  document.getElementById('calc_result').textContent='₹'+total.toLocaleString('en-IN');
-  var sel=document.getElementById('calc_product');
-  document.getElementById('calc_delivery').textContent=sel.value==='499'?'🚚 Ships in 3–5 days':'🚚 Ships in 24 hrs';
-}
-function applyCoupon() {
-  var code=document.getElementById('coupon_input').value.trim().toUpperCase();
-  var msg=document.getElementById('coupon_msg');
+window.calcPrice = function() {
+  var base = parseFloat(document.getElementById('calc_product').value)||500;
+  var size = parseFloat(document.getElementById('calc_size').value)||1;
+  var mat = parseFloat(document.getElementById('calc_mat').value)||1;
+  var qty = Math.max(1,parseInt(document.getElementById('calc_qty').value)||1);
+  var total = Math.round(base*size*mat)*qty;
+  if (appliedDiscount>0) total = Math.round(total*(1-appliedDiscount/100));
+  document.getElementById('calc_result').textContent = '₹'+total.toLocaleString('en-IN');
+  var sel = document.getElementById('calc_product');
+  document.getElementById('calc_delivery').textContent = sel.value==='499'?'🚚 Ships in 3–5 days':'🚚 Ships in 24 hrs';
+};
+
+window.applyCoupon = function() {
+  var code = document.getElementById('coupon_input').value.trim().toUpperCase();
+  var msg = document.getElementById('coupon_msg');
   if (COUPONS[code]) {
-    appliedDiscount=COUPONS[code];
-    msg.textContent='✅ Coupon applied! '+appliedDiscount+'% off';
-    msg.className='coupon-msg success';
+    appliedDiscount = COUPONS[code];
+    msg.textContent = '✅ Coupon applied! '+appliedDiscount+'% off';
+    msg.className = 'coupon-msg success';
   } else {
-    appliedDiscount=0;
-    msg.textContent='❌ Invalid coupon. Try: 3DIFY10';
-    msg.className='coupon-msg error';
+    appliedDiscount = 0;
+    msg.textContent = '❌ Invalid coupon. Try: 3DIFY10';
+    msg.className = 'coupon-msg error';
   }
-  calcPrice();
-}
-function orderFromCalc() {
-  var pName=document.getElementById('calc_product').options[document.getElementById('calc_product').selectedIndex].text;
-  var size=document.getElementById('calc_size').options[document.getElementById('calc_size').selectedIndex].text;
-  var mat=document.getElementById('calc_mat').options[document.getElementById('calc_mat').selectedIndex].text;
-  var qty=document.getElementById('calc_qty').value;
-  var price=document.getElementById('calc_result').textContent;
-  var coupon=document.getElementById('coupon_input').value.trim().toUpperCase();
-  var msg='Hi 3Dify! 👋 I used the Price Calculator:\n\n🛍 Product: '+pName+'\n📐 Size: '+size+'\n🧱 Material: '+mat+'\n🔢 Qty: '+qty+'\n💰 Price: '+price+(coupon&&appliedDiscount?'\n🎟 Coupon: '+coupon+' ('+appliedDiscount+'% off)':'')+'\n\nPlease confirm!';
+  window.calcPrice();
+};
+
+window.orderFromCalc = function() {
+  var pName = document.getElementById('calc_product').options[document.getElementById('calc_product').selectedIndex].text;
+  var size = document.getElementById('calc_size').options[document.getElementById('calc_size').selectedIndex].text;
+  var mat = document.getElementById('calc_mat').options[document.getElementById('calc_mat').selectedIndex].text;
+  var qty = document.getElementById('calc_qty').value;
+  var price = document.getElementById('calc_result').textContent;
+  var coupon = document.getElementById('coupon_input').value.trim().toUpperCase();
+  var msg = 'Hi 3Dify! 👋 I used the Price Calculator:\n\n🛍 Product: '+pName+'\n📐 Size: '+size+'\n🧱 Material: '+mat+'\n🔢 Qty: '+qty+'\n💰 Price: '+price+(coupon&&appliedDiscount?'\n🎟 Coupon: '+coupon+' ('+appliedDiscount+'% off)':'')+'\n\nPlease confirm!';
   window.open('https://wa.me/'+waNum+'?text='+encodeURIComponent(msg),'_blank');
-}
+};
 
 // ── BULK ORDER ──
-function sendBulkOrder() {
-  var name=document.getElementById('bulk_name').value.trim();
-  var phone=document.getElementById('bulk_phone').value.trim();
-  var product=document.getElementById('bulk_product').value.trim();
-  var qty=document.getElementById('bulk_qty').value.trim();
-  var event=document.getElementById('bulk_event').value.trim();
+window.sendBulkOrder = function() {
+  var name = document.getElementById('bulk_name').value.trim();
+  var phone = document.getElementById('bulk_phone').value.trim();
+  var product = document.getElementById('bulk_product').value.trim();
+  var qty = document.getElementById('bulk_qty').value.trim();
+  var event = document.getElementById('bulk_event').value.trim();
   if (!name||!phone||!product||!qty) { showToast('❌ Please fill all required fields'); return; }
-  var msg='Hi 3Dify! 👋 Bulk Order Quote Request:\n\n👤 Name: '+name+'\n📱 Phone: '+phone+'\n🛍 Product: '+product+'\n🔢 Qty: '+qty+'\n🎯 Purpose: '+(event||'Not specified')+'\n\nPlease share best pricing!';
+  var msg = 'Hi 3Dify! 👋 Bulk Order Quote Request:\n\n👤 Name: '+name+'\n📱 Phone: '+phone+'\n🛍 Product: '+product+'\n🔢 Qty: '+qty+'\n🎯 Purpose: '+(event||'Not specified')+'\n\nPlease share best pricing!';
   window.open('https://wa.me/'+waNum+'?text='+encodeURIComponent(msg),'_blank');
-}
+};
 
 // ── FAQ ──
-function toggleFaq(btn) {
-  var item=btn.parentElement;
-  var isOpen=item.classList.contains('open');
+window.toggleFaq = function(btn) {
+  var item = btn.parentElement;
+  var isOpen = item.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
   if (!isOpen) item.classList.add('open');
-}
+};
 
 // ── REVIEWS ──
-function openReviewModal(pid) {
-  reviewProductId=pid;
-  selectedRating=0;
-  var p=products.find(function(x){return x.id===pid;});
-  document.getElementById('rev_product_name').textContent=p.name;
-  document.getElementById('rev_name').value='';
-  document.getElementById('rev_text').value='';
-  document.querySelectorAll('.review-star-inp').forEach(function(s){ s.classList.remove('filled'); });
-  openModal('reviewModal');
-}
 document.querySelectorAll('.review-star-inp').forEach(function(star) {
   star.addEventListener('click', function() {
-    selectedRating=parseInt(star.dataset.val);
+    selectedRating = parseInt(star.dataset.val);
     document.querySelectorAll('.review-star-inp').forEach(function(s){ s.classList.toggle('filled',parseInt(s.dataset.val)<=selectedRating); });
   });
   star.addEventListener('mouseover', function() {
-    var v=parseInt(star.dataset.val);
+    var v = parseInt(star.dataset.val);
     document.querySelectorAll('.review-star-inp').forEach(function(s){ s.classList.toggle('filled',parseInt(s.dataset.val)<=v); });
   });
   star.addEventListener('mouseout', function() {
     document.querySelectorAll('.review-star-inp').forEach(function(s){ s.classList.toggle('filled',parseInt(s.dataset.val)<=selectedRating); });
   });
 });
-function submitReview() {
+
+window.submitReview = function() {
   if (!selectedRating) { alert('Please select a star rating!'); return; }
-  var name=document.getElementById('rev_name').value.trim()||'Anonymous';
-  var text=document.getElementById('rev_text').value.trim();
+  var name = document.getElementById('rev_name').value.trim()||'Anonymous';
+  var text = document.getElementById('rev_text').value.trim();
   if (!text) { alert('Please write a short review!'); return; }
-  if (!reviews[reviewProductId]) reviews[reviewProductId]=[];
-  reviews[reviewProductId].push({rating:selectedRating,name:name,text:text});
+  var revRef = ref(db, 'reviews/' + reviewProductId);
+  push(revRef, { rating: selectedRating, name: name, text: text });
   closeModal('reviewModal');
-  renderProducts();
   showToast('✅ Review submitted! Thank you 🙏');
-}
+};
 
 // ── CUSTOMIZE ──
-function openCustomizeModal(id) {
-  customizeProductId=id;
-  var p=products.find(function(x){return x.id===id;});
-  document.getElementById('cm_name').textContent=p.name;
-  document.getElementById('cm_text').value='';
-  document.getElementById('cm_note').value='';
-  document.querySelectorAll('#cm_colors .swatch').forEach(function(s,i){ s.classList.toggle('active',i===0); });
-  document.querySelectorAll('#cm_sizes .pill').forEach(function(s,i){ s.classList.toggle('active',i===0); });
-  document.querySelectorAll('#cm_mats .pill').forEach(function(s,i){ s.classList.toggle('active',i===0); });
-  document.getElementById('cm_color_label').textContent='Black';
-  updateOrderSummary(p);
-  openModal('customizeModal');
-}
 function updateOrderSummary(p) {
-  var color=(document.querySelector('#cm_colors .swatch.active')||{}).dataset.color||'Black';
-  var size=((document.querySelector('#cm_sizes .pill.active')||{}).dataset||{}).val||'Small';
-  var material=((document.querySelector('#cm_mats .pill.active')||{}).dataset||{}).val||'PLA';
-  var text=document.getElementById('cm_text').value.trim();
-  var note=document.getElementById('cm_note').value.trim();
-  document.getElementById('summary_content').innerHTML=
+  var color = (document.querySelector('#cm_colors .swatch.active')||{}).dataset.color||'Black';
+  var size = ((document.querySelector('#cm_sizes .pill.active')||{}).dataset||{}).val||'Small';
+  var material = ((document.querySelector('#cm_mats .pill.active')||{}).dataset||{}).val||'PLA';
+  var text = document.getElementById('cm_text').value.trim();
+  var note = document.getElementById('cm_note').value.trim();
+  document.getElementById('summary_content').innerHTML =
     '<div class="summary-row"><span class="s-key">Product</span><span class="s-val">'+p.name+'</span></div>'+
     '<div class="summary-row"><span class="s-key">Color</span><span class="s-val">'+color+'</span></div>'+
     '<div class="summary-row"><span class="s-key">Size</span><span class="s-val">'+size+'</span></div>'+
@@ -1106,82 +1145,102 @@ function updateOrderSummary(p) {
     (text?'<div class="summary-row"><span class="s-key">Custom Text</span><span class="s-val">'+text+'</span></div>':'')+
     (note?'<div class="summary-row"><span class="s-key">Note</span><span class="s-val">'+note+'</span></div>':'');
 }
-function sendWhatsAppOrder() {
-  var p=products.find(function(x){return x.id===customizeProductId;});
+
+window.sendWhatsAppOrder = function() {
+  var p = products.find(function(x){ return x.firebaseKey===customizeProductId; });
   if (!p) return;
-  var color=(document.querySelector('#cm_colors .swatch.active')||{}).dataset.color||'Black';
-  var size=((document.querySelector('#cm_sizes .pill.active')||{}).dataset||{}).val||'Small';
-  var material=((document.querySelector('#cm_mats .pill.active')||{}).dataset||{}).val||'PLA';
-  var text=document.getElementById('cm_text').value.trim();
-  var note=document.getElementById('cm_note').value.trim();
-  var msg='Hi 3Dify! 👋 I\'d like to place a custom order:\n\n🛍 Product: '+p.name+'\n🎨 Color: '+color+'\n📐 Size: '+size+'\n🧱 Material: '+material+(text?'\n✏ Custom Text: '+text:'')+(note?'\n📝 Notes: '+note:'')+'\n\nPlease confirm availability and price. Thank you!';
+  var color = (document.querySelector('#cm_colors .swatch.active')||{}).dataset.color||'Black';
+  var size = ((document.querySelector('#cm_sizes .pill.active')||{}).dataset||{}).val||'Small';
+  var material = ((document.querySelector('#cm_mats .pill.active')||{}).dataset||{}).val||'PLA';
+  var text = document.getElementById('cm_text').value.trim();
+  var note = document.getElementById('cm_note').value.trim();
+  var msg = 'Hi 3Dify! 👋 I\'d like to place a custom order:\n\n🛍 Product: '+p.name+'\n🎨 Color: '+color+'\n📐 Size: '+size+'\n🧱 Material: '+material+(text?'\n✏ Custom Text: '+text:'')+(note?'\n📝 Notes: '+note:'')+'\n\nPlease confirm availability and price. Thank you!';
   window.open('https://wa.me/'+waNum+'?text='+encodeURIComponent(msg),'_blank');
-}
+};
+
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains('swatch')) {
     document.querySelectorAll('#cm_colors .swatch').forEach(function(s){ s.classList.remove('active'); });
     e.target.classList.add('active');
-    document.getElementById('cm_color_label').textContent=e.target.dataset.color;
-    if (customizeProductId) updateOrderSummary(products.find(function(x){return x.id===customizeProductId;}));
+    document.getElementById('cm_color_label').textContent = e.target.dataset.color;
+    if (customizeProductId) {
+      var p = products.find(function(x){ return x.firebaseKey===customizeProductId; });
+      if (p) updateOrderSummary(p);
+    }
   }
-  var pill=e.target.classList.contains('pill')?e.target:e.target.closest('.pill');
+  var pill = e.target.classList.contains('pill')?e.target:e.target.closest('.pill');
   if (pill) {
-    var group=pill.parentElement;
+    var group = pill.parentElement;
     group.querySelectorAll('.pill').forEach(function(p){ p.classList.remove('active'); });
     pill.classList.add('active');
-    if (customizeProductId) updateOrderSummary(products.find(function(x){return x.id===customizeProductId;}));
+    if (customizeProductId) {
+      var prod = products.find(function(x){ return x.firebaseKey===customizeProductId; });
+      if (prod) updateOrderSummary(prod);
+    }
   }
 });
+
 document.getElementById('cm_text').addEventListener('input', function() {
-  if (customizeProductId) updateOrderSummary(products.find(function(x){return x.id===customizeProductId;}));
+  if (customizeProductId) {
+    var p = products.find(function(x){ return x.firebaseKey===customizeProductId; });
+    if (p) updateOrderSummary(p);
+  }
 });
 document.getElementById('cm_note').addEventListener('input', function() {
-  if (customizeProductId) updateOrderSummary(products.find(function(x){return x.id===customizeProductId;}));
+  if (customizeProductId) {
+    var p = products.find(function(x){ return x.firebaseKey===customizeProductId; });
+    if (p) updateOrderSummary(p);
+  }
 });
 
 // ── COUNTERS ──
 function animateCounters() {
   document.querySelectorAll('.counter-num').forEach(function(el) {
-    var target=parseInt(el.dataset.target);
-    var current=0;
-    var step=Math.ceil(target/60);
-    var timer=setInterval(function() {
-      current=Math.min(current+step,target);
-      el.textContent=current+(current===target?'+':'');
+    var target = parseInt(el.dataset.target);
+    var current = 0;
+    var step = Math.ceil(target/60);
+    var timer = setInterval(function() {
+      current = Math.min(current+step,target);
+      el.textContent = current+(current===target?'+':'');
       if (current>=target) clearInterval(timer);
     },25);
   });
 }
-var countersDone=false;
-var counterObserver=new IntersectionObserver(function(entries) {
+var countersDone = false;
+var counterObserver = new IntersectionObserver(function(entries) {
   entries.forEach(function(e) {
     if (e.isIntersecting&&!countersDone) { countersDone=true; animateCounters(); }
   });
 },{threshold:0.5});
-var countersEl=document.querySelector('.counters-wrap');
+var countersEl = document.querySelector('.counters-wrap');
 if (countersEl) counterObserver.observe(countersEl);
 
 // ── MODALS ──
 function openModal(id) { document.getElementById(id).classList.add('open'); }
 function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+window.openModal = openModal;
+window.closeModal = closeModal;
+
 document.querySelectorAll('.modal-overlay').forEach(function(o) {
   o.addEventListener('click', function(e) { if (e.target===o) o.classList.remove('open'); });
 });
 
 // ── TOAST ──
 function showToast(msg) {
-  var t=document.createElement('div');
-  t.textContent=msg;
-  t.style.cssText='position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:0.8rem 1.6rem;border-radius:50px;font-size:0.85rem;font-weight:600;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.2);white-space:nowrap;';
+  var t = document.createElement('div');
+  t.textContent = msg;
+  t.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:0.8rem 1.6rem;border-radius:50px;font-size:0.85rem;font-weight:600;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.2);white-space:nowrap;';
   document.body.appendChild(t);
   setTimeout(function(){ t.remove(); },3000);
 }
+window.showToast = showToast;
 
 // ── SCROLL ──
 window.addEventListener('scroll', function() {
   document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY>60);
 });
-var observer=new IntersectionObserver(function(entries) {
+
+var observer = new IntersectionObserver(function(entries) {
   entries.forEach(function(e,i) {
     if (e.isIntersecting) {
       setTimeout(function(){ e.target.classList.add('visible'); },i*60);
@@ -1191,9 +1250,9 @@ var observer=new IntersectionObserver(function(entries) {
 },{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(function(el){ observer.observe(el); });
 
-// ── INIT ──
-renderProducts();
-calcPrice();
+// Init calculator
+window.calcPrice();
+
 </script>
 </body>
 </html>
